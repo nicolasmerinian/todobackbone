@@ -12,4 +12,11 @@ describe('Todo', function() {
 		});
 	});
 
+	describe('done', function() {
+		it('should have a done "attribute" set to "false" by default', function() {
+			let todo = new Todo();
+			assert.equal(todo.get('done'), false);
+		});
+	});
+
 });
