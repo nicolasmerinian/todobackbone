@@ -9,11 +9,11 @@ var TodoView = Backbone.Collection.extend({
 	template: _.template($('#todo-template').html()),
 
 	initialize: function() {
-
+		this.listenTo(this.model, 'change', this.render);
 	},
 
 	render: function() {
-
+		
 	}
 
 });
