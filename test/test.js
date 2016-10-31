@@ -17,6 +17,14 @@ describe('Todo', function() {
 			let todo = new Todo();
 			assert.equal(todo.get('done'), false);
 		});
+
+		it('should invert the value of the "done" attribute', function() {
+			let todo = new Todo();
+			todo.toggle();
+			assert.equal(todo.get('done'), true);
+			todo.toggle();
+			assert.equal(todo.get('done'), false);
+		});
 	});
 
 });
