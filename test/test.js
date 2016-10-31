@@ -2,6 +2,7 @@
 
 let assert = require('assert');
 let Todo = require('../scripts/models/Todo.js');
+let TodoList = require('../scripts/models/TodoList.js');
 
 describe('Todo', function() {
 
@@ -26,5 +27,11 @@ describe('Todo', function() {
 			assert.equal(todo.get('done'), false);
 		});
 	});
+
+});
+
+describe('TodoList', function() {
+
+	
 
 });
