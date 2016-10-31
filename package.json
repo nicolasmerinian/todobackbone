@@ -1,0 +1,30 @@
+{
+  "name": "todobackbone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "npm run setup && npm run dev",
+    "setup": "npm i -g webpack",
+    "dev": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js --port=3000 --inline --watch --hot",
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "td": "npm run test && npm run dev"
+  },
+  "author": "Nicolas Merinian",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.3",
+    "jshint": "^2.9.3",
+    "jshint-loader": "^0.8.3",
+    "mocha": "^3.0.2",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-hot-middleware": "^2.12.0"
+  }
+}
