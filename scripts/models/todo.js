@@ -8,7 +8,9 @@ var Todo = Backbone.Model.extend({
 		return {
 			title: "Empty todo",
 			done: false
-		}
+		};
 	},
 
 });
+
+module.exports = Todo;
