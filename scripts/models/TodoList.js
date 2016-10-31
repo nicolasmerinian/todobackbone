@@ -4,7 +4,7 @@ let Backbone = require('Backbone');
 
 var TodoList = Backbone.Collection.extend({
 
-
+	model: Todo,
 
 });
 
