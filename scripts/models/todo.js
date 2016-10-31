@@ -11,6 +11,10 @@ var Todo = Backbone.Model.extend({
 		};
 	},
 
+	toggle: function() {
+		this.set('done', !this.get('done'));
+	}
+
 });
 
 module.exports = Todo;
