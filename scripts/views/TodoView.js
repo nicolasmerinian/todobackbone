@@ -1,6 +1,8 @@
 'use strict';
 
 let Backbone = require('Backbone');
+let $ = require('jquery');
+let _ = require('Underscore');
 
 var TodoView = Backbone.Collection.extend({
 
@@ -13,7 +15,9 @@ var TodoView = Backbone.Collection.extend({
 	},
 
 	render: function() {
-		
+		this.$el.html(this.template(this.model.toJSON()));
+		this.$el.toggleClass('done', this.model.get('done'));
+		return this;
 	}
 
 });
